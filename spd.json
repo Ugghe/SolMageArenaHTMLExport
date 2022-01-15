@@ -1,0 +1,20 @@
+{
+    "A White Mage":{
+        "Attire":"White Mage Robe", 
+        "Focus": "Staff of Luthic's Grace", 
+        "Head": "White Mage Hat",
+        "Magus": "White Sol",
+        "Special": "None",
+        "Name": "This is a Name and Title #999" 
+    },
+
+    "A Red Mage":{
+    "Attire":"Red Mage Robe", 
+    "Focus": "Staff of Anor's Flame", 
+    "Head": "Red Mage Hat",
+    "Magus": "Red Sol",
+    "Special": "Cigarette",
+    "Name": "This is a Name and Title #888" 
+    }
+
+}
