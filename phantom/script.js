@@ -1,5 +1,3 @@
-// import loadMetadata from "../src";
-
 let walletAddress;
 let connection;
 let web3 = solanaWeb3;
@@ -21,8 +19,6 @@ window.onload = async () => {
         console.log("Inside script.js");
     }
 
-    // console.log("web3 bundle", web3.Connection);
-
     connection = new web3.Connection(
         "https://crimson-spring-silence.solana-mainnet.quiknode.pro/ace9fd07b18929f276b9537eba5260c15e9703ff/",
         'confirmed',
@@ -38,11 +34,13 @@ window.onload = async () => {
     window.metadata = await window.loadMetadata(tokenAccounts, connection);
 
 
-    console.log("MetaData log: ", metadata[0].name);
-    console.log("MetaData log: ", metadata[0].attributes);
-    console.log("MetaData Size: ", metadata.length);
+    //console.log("MetaData log: ", metadata[0].name);
+    //console.log("MetaData log: ", metadata[0].attributes);
+    //console.log("MetaData Size: ", metadata.length);
 
-    console.log("Attribute: ", metadata[0].attributes[0].value)
+    //console.log("Attribute: ", metadata[0].attributes[0].value)
+
+    
+    
     walletLoaded = true;
 }
-
