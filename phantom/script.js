@@ -16,7 +16,6 @@ window.onload = async () => {
     } catch (err) {
         console.log("Catch Block Ran");
         console.error(err);
-        console.log("Inside script.js");
     }
 
     connection = new web3.Connection(
@@ -32,15 +31,11 @@ window.onload = async () => {
     console.log("Parsed Token Accounts", tokenAccounts);
 
     window.metadata = await window.loadMetadata(tokenAccounts, connection);
-
-
+    
     //console.log("MetaData log: ", metadata[0].name);
     //console.log("MetaData log: ", metadata[0].attributes);
-    //console.log("MetaData Size: ", metadata.length);
-
+    console.log("MetaData Size: ", metadata[0].length);
+    console.log(metadata)
     //console.log("Attribute: ", metadata[0].attributes[0].value)
-
-    
-    
     walletLoaded = true;
 }
