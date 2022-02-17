@@ -6,7 +6,7 @@ let tokenAccounts = [];
 //Game Variables
 let walletLoaded = false
 
-window.onload = async () => {
+window.scanPhantom = async () => {
 
     try {
         connection = await window.solana.connect();
@@ -31,11 +31,5 @@ window.onload = async () => {
     console.log("Parsed Token Accounts", tokenAccounts);
 
     window.metadata = await window.loadMetadata(tokenAccounts, connection);
-    
-    //console.log("MetaData log: ", metadata[0].name);
-    //console.log("MetaData log: ", metadata[0].attributes);
-    console.log("MetaData Size: ", metadata[0].length);
-    console.log(metadata)
-    //console.log("Attribute: ", metadata[0].attributes[0].value)
     walletLoaded = true;
 }
