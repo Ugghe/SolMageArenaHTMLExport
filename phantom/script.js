@@ -32,4 +32,5 @@ window.scanPhantom = async () => {
 
     window.metadata = await window.loadMetadata(tokenAccounts, connection);
     walletLoaded = true;
+    console.log("metadata[1]: ", metadata[1])
 }
